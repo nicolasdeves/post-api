@@ -7,9 +7,8 @@ async function insertMany(n: number) {
   for (let i = 0; i < n; i++) {
     posts.push({
       quem: `User${i}`,
-      dataHora: new Date(),
+      data_hora: new Date(),
       comentario: `Comentário gerado ${i}`,
-      campo_extra: `extra ${i}`,
       curtidas: i
     });
   }
