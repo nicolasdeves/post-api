@@ -11,4 +11,7 @@ export async function indexRoutes(app: FastifyInstance) {
   app.get('/post', consultaPosts);
 
   app.get('/post/exp/:exp', consultaPorExpressao);
+
+  app.get('/post/delete', consultaPorExpressao);
+
 }

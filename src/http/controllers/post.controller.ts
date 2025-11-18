@@ -53,3 +53,9 @@ export async function consultaPorExpressao(request: FastifyRequest) {
 
   return posts;
 }
+
+export async function deletar(request: FastifyRequest) {
+  const posts = await prisma.post.deleteMany({});
+
+  return 'Todos removidos';
+}
